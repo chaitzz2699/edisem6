@@ -1,0 +1,17 @@
+import pandas as pd
+
+
+# reading the database
+data = pd.read_csv("tips.csv")
+
+# printing the top 10 rows
+display(data.head(10))
+
+# Adding Title to the Plot
+plt.title("Scatter Plot")
+ 
+# Setting the X and Y labels
+plt.xlabel('Day')
+plt.ylabel('Tip')
+ 
+plt.show()
